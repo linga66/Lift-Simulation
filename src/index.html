@@ -4,32 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lift-Simulation</title>
+    <title>Lift Simulator</title>
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js" defer></script>
 </head>
 
 <body>
-    <header class="header">
-        <h1 class="header__heading">Lift Simulation</h1>
-        <hr class="divider" />
+    <header>
+        <h1 class="title">RDS Lift Simulator</h1>
     </header>
 
-    <div class="control">
-        <h3 class="control__title">Control Input</h3>
-        <form action="" method="post" class="control__form" id="form">
-            <div class="control--floor-input">
-                <label for="floors">No of Floors : </label>
-                <input type="number" min="2" name="floors" id="input-floors" />
-            </div>
-            <div class="control--lift-input">
-                <label for="lifts">No of Lifts : </label>
-                <input type="number" min="1" name="lifts" id="input-lifts" />
-            </div>
-            <button id="input-btn" class="control__button">Generate</button>
-        </form>
+    <div class="flexbox-container">
+
+        <div class="inputs">
+            <form id="input-form">
+                <p>Enter the number of floors</p>
+                <input type="number" placeholder="Number of floors" class="floor-input" min="1" required step="1">
+                <p>Enter the number of lifts</p>
+                <input type="number" placeholder="Number of lifts" class="lift-input" min="1" required step="1">
+            </form>
+            <button id="start-button">Start</button>
+        </div>
     </div>
-    <div id="container" class="container"></div>
+    <div class="simulator-Container">
+
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js"></script>
+
 </body>
 
 </html>
