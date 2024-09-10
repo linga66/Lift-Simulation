@@ -6,10 +6,13 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #f14949;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px; 
+    width: fit-content; 
+    margin: 20px auto; 
+    border-radius: 5px;
 }
 
 .title {
@@ -47,7 +50,7 @@ input[type="number"] {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #f14949;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -58,7 +61,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #812f2f;
 }
 
 .simulator-Container {
@@ -94,14 +97,14 @@ button:hover {
 .controls-container button {
     margin: 1px;
     border-radius: 5px;
-    background-color: #4CAF50;
+    background-color: #f14949;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .controls-container button:hover {
-    background-color: #45a049;
+    background-color: #812f2f;
 }
 
 .lifts-container {
@@ -115,7 +118,7 @@ button:hover {
 .lift {
     width: 60px;
     height: 80px;
-    background-color: #008CBA;
+    background-color: #812f2f;
     border-radius: 5px;
     display: flex;
     justify-content: space-between;
